@@ -1,2 +1,15 @@
-simpleApp:
-    blah:value
+server:
+    address: 192.168.1.100
+---
+    profiles: default
+    host: default_host
+---
+spring:
+    profiles: development
+server:
+    address: 127.0.0.1
+---
+spring:
+    profiles: production
+server:
+    address: 192.168.1.120
